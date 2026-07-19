@@ -1,0 +1,22 @@
+# Same as requirements.txt, minus pywin32 -- that package only builds on
+# Windows (it wraps the Win32 API / COM) and is used exclusively by
+# scripts/render_pptx.py for PowerPoint COM automation, which cannot run
+# inside a Linux container regardless. Everything the container needs to
+# run the actual ML pipeline and tests is listed below.
+numpy
+pandas
+scipy
+scikit-learn
+catboost
+torch
+pyarrow
+matplotlib
+seaborn
+python-pptx
+python-docx
+reportlab
+pillow
+jupyter
+nbformat
+nbconvert
+pytest

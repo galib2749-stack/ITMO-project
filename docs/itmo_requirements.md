@@ -12,19 +12,19 @@ as the hard deadline and submit as early as possible within it.
 
 | Требование ИТМО | Источник | Как выполняется в проекте | Статус |
 |---|---|---|---|
-| Ссылка на репозиторий (код проекта) | Форма подачи (скриншот), офиц. страница | https://github.com/galib2749-stack/ITMO-project — полный исходный код, `README.md`, `src/`, `notebooks/` | ✅ Готово |
-| CV / расширенное резюме (опыт, образование, навыки, достижения) | Форма подачи, офиц. страница | `application/cv.pdf` + `application/cv.md`, 1 страница, только подтверждённые факты | Запланировано |
-| Мотивационное письмо (почему AI/ML, почему AI Talent Hub) | Форма подачи, офиц. страница | `application/motivation_letter.pdf` + `.md` | Запланировано |
-| Описание проекта до 3 страниц (задача, данные, методы, результаты) | Форма подачи, офиц. страница | `application/project_description_3_pages.pdf` + `.md`, писать только после получения реальных метрик | Запланировано |
-| Презентация (шаблон, 5 мин доклад + 7 мин вопросы) | Офиц. страница | `presentation/presentation.pptx` + `.pdf`, `speaker_notes.md`, `presentation_script_5_minutes.md`, `questions_and_answers.md` | Запланировано, только после метрик |
-| Дедлайн (актуальный поток) | Офиц. страница | Wave 3: 3–20 июля 2026. Сегодня 19 июля — последний/предпоследний день | Учтено, риск указан пользователю |
-| Критерии оценки: Development & Engineering (git, docker, ci, качество кода, pipeline) | Офиц. страница | Модульный `src/`, воспроизводимый ноутбук, тесты в `tests/` | В работе |
-| Критерии оценки: Data Science (EDA, препроцессинг, модели, метрики, валидация) | Офиц. страница | Разделы 4–18 мастер-ноутбука | В работе |
-| Критерии оценки: AI Application (использование AI-инструментов/агентов) | Офиц. страница | Проект разработан с использованием Claude Code как AI-инструмента разработки; это фиксируется в описании проекта и мотивационном письме | Запланировано |
-| Критерии оценки: Product Thinking (проблема, аудитория, MVP, эффект) | Офиц. страница | Разделы Business problem, Business evaluation, Online A/B-test design | В работе |
-| Критерии оценки: Motivation (карьерные цели, понимание программы) | Офиц. страница | Мотивационное письмо | Запланировано |
+| Ссылка на репозиторий (код проекта) | Форма подачи (скриншот), офиц. страница | https://github.com/galib2749-stack/ITMO-project — полный исходный код, `README.md`, `src/`, `notebooks/` (личные документы исключены через `.gitignore`) | ✅ Готово |
+| CV / расширенное резюме (опыт, образование, навыки, достижения) | Форма подачи, офиц. страница | `application/cv.pdf`, 1 страница | ✅ Готово |
+| Мотивационное письмо (почему AI/ML, почему AI Talent Hub) | Форма подачи, офиц. страница | `application/motivation_letter.pdf` | ✅ Готово |
+| Описание проекта до 3 страниц (задача, данные, методы, результаты) | Форма подачи, офиц. страница | `application/project_description_3_pages.pdf` — расширенное, research-style, ровно 3 страницы, с реальными метриками | ✅ Готово |
+| Презентация (шаблон, 5 мин доклад + 7 мин вопросы) | Офиц. страница | `presentation/presentation.pptx` + `.pdf`, 9 слайдов, визуально проверены; `speaker_notes.md`, `presentation_script_5_minutes.md` (ровно 5:00), `questions_and_answers.md` | ✅ Готово |
+| Дедлайн (актуальный поток) | Офиц. страница | Wave 3: 3–20 июля 2026 | Учтено, риск указан пользователю |
+| Критерии оценки: Development & Engineering (git, docker, ci, качество кода, pipeline) | Офиц. страница | Git-репозиторий с историей, модульный `src/`, воспроизводимый ноутбук, тесты в `tests/`, `Dockerfile` + `requirements-docker.txt`, CI (`.github/workflows/tests.yml`, автозапуск pytest) | ✅ Готово (Docker-образ создан, но не собирался/не тестировался в этой сессии — см. примечание ниже) |
+| Критерии оценки: Data Science (EDA, препроцессинг, модели, метрики, валидация) | Офиц. страница | Разделы 4–18 мастер-ноутбука, leakage-аудит, bootstrap CI, sanity-проверки | ✅ Готово |
+| Критерии оценки: AI Application (использование AI-инструментов/агентов) | Офиц. страница | Явно раскрыто в `application/project_description_3_pages.pdf` (раздел "Использование AI-инструментов"), `README.md`, `presentation/questions_and_answers.md` | ✅ Готово |
+| Критерии оценки: Product Thinking (проблема, аудитория, MVP, эффект) | Офиц. страница | Разделы Business problem, Business evaluation, Online A/B-test design; сравнение с официальным baseline-решением как форма конкурентного анализа | ✅ Готово (конкурентный анализ — только через сравнение с baseline, не отдельным разделом) |
+| Критерии оценки: Motivation (карьерные цели, понимание программы) | Офиц. страница | Мотивационное письмо + слайд 2 презентации, со ссылками на реальные направления программы (LLM/RAG/MLOps и т.д.) | ✅ Готово |
 | Требование к личному вкладу (для командных проектов) | Офиц. страница: "командный проект — каждый подаёт отдельно, описывает свой вклад" | Проект индивидуальный, автор — Галиб Байрамов, вклад = 100% самостоятельная разработка | Неприменимо (соло-проект) |
-| Формат документов — PDF | Офиц. страница | Все submission-документы генерируются в PDF через reportlab | Запланировано |
+| Формат документов — PDF | Офиц. страница | Все submission-документы в PDF через reportlab | ✅ Готово |
 
 ## Notes on gaps / assumptions to flag to the jury
 
@@ -39,3 +39,9 @@ as the hard deadline and submit as early as possible within it.
 - "AI Application" criterion is satisfied honestly: this entire project was
   built with Claude Code (Anthropic) as an AI pair-programmer/agent under the
   author's direction — this is disclosed, not hidden.
+- The `Dockerfile` was written carefully (excludes Windows-only `pywin32`,
+  which cannot install in a Linux container, via a separate
+  `requirements-docker.txt`) but was **not actually build-tested** in this
+  session (Docker Desktop was not started, per explicit user request to skip
+  that step). If asked, be upfront that the image's correctness rests on
+  careful authoring, not a verified build.

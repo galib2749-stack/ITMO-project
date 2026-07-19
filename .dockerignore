@@ -1,0 +1,9 @@
+data/
+artifacts/*.pt
+.git/
+.pytest_cache/
+__pycache__/
+application/
+ИТМО AI Talent Hub/
+presentation/slides_png/
+*.pyc
