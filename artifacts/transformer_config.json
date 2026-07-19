@@ -1,0 +1,24 @@
+{
+  "n_stores": 13880,
+  "n_numeric_fields": 11,
+  "max_seq_len": 50,
+  "hidden_size": 64,
+  "n_heads": 4,
+  "n_layers": 2,
+  "dropout": 0.2,
+  "numeric_event_fields": [
+    "n_items",
+    "n_unique_products",
+    "n_unique_categories",
+    "purchase_sum",
+    "total_quantity",
+    "regular_points_received",
+    "express_points_received",
+    "regular_points_spent",
+    "express_points_spent",
+    "discount_sum",
+    "iss_sum"
+  ],
+  "random_seed": 42,
+  "epochs_trained": 7
+}

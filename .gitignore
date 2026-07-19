@@ -1,0 +1,30 @@
+# Real X5 RetailHero dataset -- large (4.8GB) and not to be redistributed
+# via a public repo (competition data, not ours to publish). See
+# reports/data_download_report.md for how to obtain and place it locally.
+data/raw/
+
+# Intermediate pipeline artifacts derived from the raw dataset -- large
+# (one file >200MB) and fully reproducible by re-running src/build_client_aggregates.py.
+data/interim/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Microsoft Office temporary lock files
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local Claude Code tool settings -- not project-relevant
+.claude/
+
+# Personal application documents (CV, motivation letter -- contain contact
+# info, employment history) and the ITMO submission bundle that duplicates
+# them -- kept locally for the actual contest submission, not published in
+# this public code repository.
+application/
+ИТМО AI Talent Hub/

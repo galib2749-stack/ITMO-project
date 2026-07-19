@@ -1,0 +1,462 @@
+{
+  "random_targeting": [
+    {
+      "decile": 1,
+      "n": 4001,
+      "n_treatment": 2036,
+      "n_control": 1965,
+      "treatment_rate": 0.6488212180746562,
+      "control_rate": 0.5964376590330789,
+      "uplift": 0.05238355904157732
+    },
+    {
+      "decile": 2,
+      "n": 4001,
+      "n_treatment": 2018,
+      "n_control": 1983,
+      "treatment_rate": 0.6442021803766105,
+      "control_rate": 0.6046394351991932,
+      "uplift": 0.03956274517741731
+    },
+    {
+      "decile": 3,
+      "n": 4001,
+      "n_treatment": 1971,
+      "n_control": 2030,
+      "treatment_rate": 0.6245560629122273,
+      "control_rate": 0.6044334975369459,
+      "uplift": 0.020122565375281454
+    },
+    {
+      "decile": 4,
+      "n": 4001,
+      "n_treatment": 2049,
+      "n_control": 1952,
+      "treatment_rate": 0.6295754026354319,
+      "control_rate": 0.5917008196721312,
+      "uplift": 0.03787458296330071
+    },
+    {
+      "decile": 5,
+      "n": 4001,
+      "n_treatment": 1939,
+      "n_control": 2062,
+      "treatment_rate": 0.6472408457968025,
+      "control_rate": 0.6013579049466538,
+      "uplift": 0.04588294085014877
+    },
+    {
+      "decile": 6,
+      "n": 4001,
+      "n_treatment": 1963,
+      "n_control": 2038,
+      "treatment_rate": 0.6291390728476821,
+      "control_rate": 0.6020608439646713,
+      "uplift": 0.027078228883010813
+    },
+    {
+      "decile": 7,
+      "n": 4001,
+      "n_treatment": 1968,
+      "n_control": 2033,
+      "treatment_rate": 0.6448170731707317,
+      "control_rate": 0.6163305459911461,
+      "uplift": 0.028486527179585552
+    },
+    {
+      "decile": 8,
+      "n": 4001,
+      "n_treatment": 2021,
+      "n_control": 1980,
+      "treatment_rate": 0.6254329539831767,
+      "control_rate": 0.5994949494949495,
+      "uplift": 0.02593800448822714
+    },
+    {
+      "decile": 9,
+      "n": 4001,
+      "n_treatment": 2001,
+      "n_control": 2000,
+      "treatment_rate": 0.6441779110444777,
+      "control_rate": 0.618,
+      "uplift": 0.026177911044477753
+    },
+    {
+      "decile": 10,
+      "n": 4002,
+      "n_treatment": 2032,
+      "n_control": 1970,
+      "treatment_rate": 0.6274606299212598,
+      "control_rate": 0.5979695431472081,
+      "uplift": 0.029491086774051767
+    }
+  ],
+  "response_catboost": [
+    {
+      "decile": 1,
+      "n": 4001,
+      "n_treatment": 2005,
+      "n_control": 1996,
+      "treatment_rate": 0.9531172069825437,
+      "control_rate": 0.9554108216432866,
+      "uplift": -0.0022936146607429597
+    },
+    {
+      "decile": 2,
+      "n": 4001,
+      "n_treatment": 2011,
+      "n_control": 1990,
+      "treatment_rate": 0.8901044256588762,
+      "control_rate": 0.8678391959798994,
+      "uplift": 0.022265229678976706
+    },
+    {
+      "decile": 3,
+      "n": 4001,
+      "n_treatment": 2039,
+      "n_control": 1962,
+      "treatment_rate": 0.8165767533104463,
+      "control_rate": 0.7711518858307849,
+      "uplift": 0.04542486747966146
+    },
+    {
+      "decile": 4,
+      "n": 4001,
+      "n_treatment": 1997,
+      "n_control": 2004,
+      "treatment_rate": 0.7456184276414622,
+      "control_rate": 0.7310379241516967,
+      "uplift": 0.014580503489765584
+    },
+    {
+      "decile": 5,
+      "n": 4001,
+      "n_treatment": 2028,
+      "n_control": 1973,
+      "treatment_rate": 0.6858974358974359,
+      "control_rate": 0.6730866700456158,
+      "uplift": 0.01281076585182006
+    },
+    {
+      "decile": 6,
+      "n": 4001,
+      "n_treatment": 1981,
+      "n_control": 2020,
+      "treatment_rate": 0.6118122160524987,
+      "control_rate": 0.5613861386138614,
+      "uplift": 0.05042607743863725
+    },
+    {
+      "decile": 7,
+      "n": 4001,
+      "n_treatment": 1960,
+      "n_control": 2041,
+      "treatment_rate": 0.55,
+      "control_rate": 0.4973052425281725,
+      "uplift": 0.05269475747182756
+    },
+    {
+      "decile": 8,
+      "n": 4001,
+      "n_treatment": 1964,
+      "n_control": 2037,
+      "treatment_rate": 0.4816700610997963,
+      "control_rate": 0.41924398625429554,
+      "uplift": 0.06242607484550078
+    },
+    {
+      "decile": 9,
+      "n": 4001,
+      "n_treatment": 2015,
+      "n_control": 1986,
+      "treatment_rate": 0.3751861042183623,
+      "control_rate": 0.33484390735146025,
+      "uplift": 0.04034219686690205
+    },
+    {
+      "decile": 10,
+      "n": 4002,
+      "n_treatment": 1998,
+      "n_control": 2004,
+      "treatment_rate": 0.24574574574574576,
+      "control_rate": 0.23253493013972057,
+      "uplift": 0.013210815606025189
+    }
+  ],
+  "t_learner_catboost": [
+    {
+      "decile": 1,
+      "n": 4001,
+      "n_treatment": 1974,
+      "n_control": 2027,
+      "treatment_rate": 0.5623100303951368,
+      "control_rate": 0.4602861371484953,
+      "uplift": 0.10202389324664152
+    },
+    {
+      "decile": 2,
+      "n": 4001,
+      "n_treatment": 1991,
+      "n_control": 2010,
+      "treatment_rate": 0.5730788548468106,
+      "control_rate": 0.5373134328358209,
+      "uplift": 0.035765422010989756
+    },
+    {
+      "decile": 3,
+      "n": 4001,
+      "n_treatment": 2066,
+      "n_control": 1935,
+      "treatment_rate": 0.6093901258470474,
+      "control_rate": 0.5591731266149871,
+      "uplift": 0.050216999232060355
+    },
+    {
+      "decile": 4,
+      "n": 4001,
+      "n_treatment": 1984,
+      "n_control": 2017,
+      "treatment_rate": 0.6159274193548387,
+      "control_rate": 0.585027268220129,
+      "uplift": 0.030900151134709786
+    },
+    {
+      "decile": 5,
+      "n": 4001,
+      "n_treatment": 2003,
+      "n_control": 1998,
+      "treatment_rate": 0.6699950074887668,
+      "control_rate": 0.6121121121121121,
+      "uplift": 0.0578828953766547
+    },
+    {
+      "decile": 6,
+      "n": 4001,
+      "n_treatment": 1973,
+      "n_control": 2028,
+      "treatment_rate": 0.664977192093259,
+      "control_rate": 0.6425049309664694,
+      "uplift": 0.022472261126789572
+    },
+    {
+      "decile": 7,
+      "n": 4001,
+      "n_treatment": 2044,
+      "n_control": 1957,
+      "treatment_rate": 0.6868884540117417,
+      "control_rate": 0.6699029126213593,
+      "uplift": 0.01698554139038244
+    },
+    {
+      "decile": 8,
+      "n": 4001,
+      "n_treatment": 2024,
+      "n_control": 1977,
+      "treatment_rate": 0.7080039525691699,
+      "control_rate": 0.6990389479008599,
+      "uplift": 0.008965004668310073
+    },
+    {
+      "decile": 9,
+      "n": 4001,
+      "n_treatment": 1960,
+      "n_control": 2041,
+      "treatment_rate": 0.6913265306122449,
+      "control_rate": 0.6937775600195982,
+      "uplift": -0.002451029407353311
+    },
+    {
+      "decile": 10,
+      "n": 4002,
+      "n_treatment": 1979,
+      "n_control": 2023,
+      "treatment_rate": 0.5816068721576554,
+      "control_rate": 0.5753830944142363,
+      "uplift": 0.00622377774341909
+    }
+  ],
+  "x_learner_catboost": [
+    {
+      "decile": 1,
+      "n": 4001,
+      "n_treatment": 1992,
+      "n_control": 2009,
+      "treatment_rate": 0.5632530120481928,
+      "control_rate": 0.45047287207565956,
+      "uplift": 0.11278013997253322
+    },
+    {
+      "decile": 2,
+      "n": 4001,
+      "n_treatment": 1963,
+      "n_control": 2038,
+      "treatment_rate": 0.5674987264391238,
+      "control_rate": 0.5196270853778214,
+      "uplift": 0.04787164106130237
+    },
+    {
+      "decile": 3,
+      "n": 4001,
+      "n_treatment": 2037,
+      "n_control": 1964,
+      "treatment_rate": 0.6151202749140894,
+      "control_rate": 0.5504073319755601,
+      "uplift": 0.06471294293852925
+    },
+    {
+      "decile": 4,
+      "n": 4001,
+      "n_treatment": 2014,
+      "n_control": 1987,
+      "treatment_rate": 0.6047666335650447,
+      "control_rate": 0.5863110216406643,
+      "uplift": 0.01845561192438039
+    },
+    {
+      "decile": 5,
+      "n": 4001,
+      "n_treatment": 1981,
+      "n_control": 2020,
+      "treatment_rate": 0.6360424028268551,
+      "control_rate": 0.599009900990099,
+      "uplift": 0.037032501836756104
+    },
+    {
+      "decile": 6,
+      "n": 4001,
+      "n_treatment": 2007,
+      "n_control": 1994,
+      "treatment_rate": 0.6472346786248132,
+      "control_rate": 0.6308926780341023,
+      "uplift": 0.016342000590710892
+    },
+    {
+      "decile": 7,
+      "n": 4001,
+      "n_treatment": 2027,
+      "n_control": 1974,
+      "treatment_rate": 0.6758756783423779,
+      "control_rate": 0.660081053698075,
+      "uplift": 0.015794624644302924
+    },
+    {
+      "decile": 8,
+      "n": 4001,
+      "n_treatment": 1991,
+      "n_control": 2010,
+      "treatment_rate": 0.6956303365143144,
+      "control_rate": 0.6940298507462687,
+      "uplift": 0.001600485768045723
+    },
+    {
+      "decile": 9,
+      "n": 4001,
+      "n_treatment": 2004,
+      "n_control": 1997,
+      "treatment_rate": 0.717564870259481,
+      "control_rate": 0.6975463194792189,
+      "uplift": 0.020018550780262157
+    },
+    {
+      "decile": 10,
+      "n": 4002,
+      "n_treatment": 1982,
+      "n_control": 2020,
+      "treatment_rate": 0.6407669021190716,
+      "control_rate": 0.6460396039603961,
+      "uplift": -0.005272701841324445
+    }
+  ],
+  "transformer_two_head": [
+    {
+      "decile": 1,
+      "n": 4001,
+      "n_treatment": 2010,
+      "n_control": 1991,
+      "treatment_rate": 0.4014925373134328,
+      "control_rate": 0.30838774485183323,
+      "uplift": 0.09310479246159958
+    },
+    {
+      "decile": 2,
+      "n": 4001,
+      "n_treatment": 2017,
+      "n_control": 1984,
+      "treatment_rate": 0.41298958849776896,
+      "control_rate": 0.375,
+      "uplift": 0.037989588497768956
+    },
+    {
+      "decile": 3,
+      "n": 4001,
+      "n_treatment": 1948,
+      "n_control": 2053,
+      "treatment_rate": 0.42505133470225875,
+      "control_rate": 0.4125669751583049,
+      "uplift": 0.012484359543953827
+    },
+    {
+      "decile": 4,
+      "n": 4001,
+      "n_treatment": 1943,
+      "n_control": 2058,
+      "treatment_rate": 0.45496654657745755,
+      "control_rate": 0.4217687074829932,
+      "uplift": 0.03319783909446433
+    },
+    {
+      "decile": 5,
+      "n": 4001,
+      "n_treatment": 2011,
+      "n_control": 1990,
+      "treatment_rate": 0.5877672799602188,
+      "control_rate": 0.5412060301507537,
+      "uplift": 0.04656124980946508
+    },
+    {
+      "decile": 6,
+      "n": 4001,
+      "n_treatment": 1995,
+      "n_control": 2006,
+      "treatment_rate": 0.7177944862155389,
+      "control_rate": 0.7003988035892323,
+      "uplift": 0.01739568262630653
+    },
+    {
+      "decile": 7,
+      "n": 4001,
+      "n_treatment": 1985,
+      "n_control": 2016,
+      "treatment_rate": 0.8120906801007557,
+      "control_rate": 0.8159722222222222,
+      "uplift": -0.003881542121466519
+    },
+    {
+      "decile": 8,
+      "n": 4001,
+      "n_treatment": 2006,
+      "n_control": 1995,
+      "treatment_rate": 0.8594217347956131,
+      "control_rate": 0.8315789473684211,
+      "uplift": 0.02784278742719204
+    },
+    {
+      "decile": 9,
+      "n": 4001,
+      "n_treatment": 2045,
+      "n_control": 1956,
+      "treatment_rate": 0.8386308068459658,
+      "control_rate": 0.8093047034764826,
+      "uplift": 0.02932610336948316
+    },
+    {
+      "decile": 10,
+      "n": 4002,
+      "n_treatment": 2038,
+      "n_control": 1964,
+      "treatment_rate": 0.8400392541707556,
+      "control_rate": 0.8309572301425662,
+      "uplift": 0.009082024028189473
+    }
+  ]
+}
