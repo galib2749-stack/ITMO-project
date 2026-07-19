@@ -18,7 +18,7 @@ as the hard deadline and submit as early as possible within it.
 | Описание проекта до 3 страниц (задача, данные, методы, результаты) | Форма подачи, офиц. страница | `application/project_description_3_pages.pdf` — расширенное, research-style, ровно 3 страницы, с реальными метриками | ✅ Готово |
 | Презентация (шаблон, 5 мин доклад + 7 мин вопросы) | Офиц. страница | `presentation/presentation.pptx` + `.pdf`, 9 слайдов, визуально проверены; `speaker_notes.md`, `presentation_script_5_minutes.md` (ровно 5:00), `questions_and_answers.md` | ✅ Готово |
 | Дедлайн (актуальный поток) | Офиц. страница | Wave 3: 3–20 июля 2026 | Учтено, риск указан пользователю |
-| Критерии оценки: Development & Engineering (git, docker, ci, качество кода, pipeline) | Офиц. страница | Git-репозиторий с историей, модульный `src/`, воспроизводимый ноутбук, тесты в `tests/`, `Dockerfile` + `requirements-docker.txt`, CI (`.github/workflows/tests.yml`, автозапуск pytest) | ✅ Готово (Docker-образ создан, но не собирался/не тестировался в этой сессии — см. примечание ниже) |
+| Критерии оценки: Development & Engineering (git, docker, ci, качество кода, pipeline) | Офиц. страница | Git-репозиторий с историей, модульный `src/`, воспроизводимый ноутбук, тесты в `tests/`, `Dockerfile` + `requirements-docker.txt`, CI (`.github/workflows/tests.yml`, автозапуск pytest) | ✅ Готово — образ собран (`docker build`) и реально запущен (`docker run`): все 9 unit-тестов прошли внутри чистого Linux-контейнера |
 | Критерии оценки: Data Science (EDA, препроцессинг, модели, метрики, валидация) | Офиц. страница | Разделы 4–18 мастер-ноутбука, leakage-аудит, bootstrap CI, sanity-проверки | ✅ Готово |
 | Критерии оценки: AI Application (использование AI-инструментов/агентов) | Офиц. страница | Явно раскрыто в `application/project_description_3_pages.pdf` (раздел "Использование AI-инструментов"), `README.md`, `presentation/questions_and_answers.md` | ✅ Готово |
 | Критерии оценки: Product Thinking (проблема, аудитория, MVP, эффект) | Офиц. страница | Разделы Business problem, Business evaluation, Online A/B-test design; сравнение с официальным baseline-решением как форма конкурентного анализа | ✅ Готово (конкурентный анализ — только через сравнение с baseline, не отдельным разделом) |
@@ -39,9 +39,9 @@ as the hard deadline and submit as early as possible within it.
 - "AI Application" criterion is satisfied honestly: this entire project was
   built with Claude Code (Anthropic) as an AI pair-programmer/agent under the
   author's direction — this is disclosed, not hidden.
-- The `Dockerfile` was written carefully (excludes Windows-only `pywin32`,
-  which cannot install in a Linux container, via a separate
-  `requirements-docker.txt`) but was **not actually build-tested** in this
-  session (Docker Desktop was not started, per explicit user request to skip
-  that step). If asked, be upfront that the image's correctness rests on
-  careful authoring, not a verified build.
+- The `Dockerfile` excludes Windows-only `pywin32` (which cannot install in a
+  Linux container -- used only by the PowerPoint COM automation script, not
+  the ML pipeline) via a separate `requirements-docker.txt`. Build and run
+  were both verified: `docker build -t x5-uplift .` succeeds, and
+  `docker run --rm x5-uplift` executes the full test suite (9/9 passing)
+  inside the container.
